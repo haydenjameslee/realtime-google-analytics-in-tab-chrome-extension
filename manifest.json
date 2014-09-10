@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Realtime Google Analytics Count in Tab",
+  "description": "See the number of realtime users on your site in the tab of the realtime google analytics overview page.",
+  "version": "1.1",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/analytics/*"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ]
+}
